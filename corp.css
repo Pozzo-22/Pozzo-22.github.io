@@ -68,7 +68,7 @@ header{
 
 .testo-narrativo{
 
-    font-size: large;
+    font-size: x-large;
 
 }
 
@@ -100,4 +100,11 @@ footer{
 
     margin-left: 20px;
     color:  white;
+}
+
+.btn{
+    align-content: center;
+    background-color: #ADBABD;
+    font-size: x-large;
+    
 }
