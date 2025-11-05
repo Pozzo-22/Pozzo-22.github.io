@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+    <head>
+        <link href="corp.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="decoration.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amici dei pennuti</title>
+        <link rel="icon" type="image/x-icon" href="Imgs/GooseLogo.png">
+
+        <script type="text/javascript">
+            function preventBack() {
+                window.history.forward(); 
+            }
+            
+            setTimeout("preventBack()", 0);
+            
+            window.onunload = function () { null };
+        </script>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav class="BarraDiNavigazione">
+
+                <img src="Imgs/GooseLogo.png" width="50">  
+                <a class="titoloBarra"> Trattoria XYZ</a>         
+                <a class="linkDiNavigazione" href="index.html" > Home</a>
+                <a class="linkDiNavigazione" href="menu.html"> Menù</a>
+                <a class="linkDiNavigazione" href="turismo.html"> Turismo</a>
+
+                
+
+            </nav>
+
+            
+
+        </header>
+
+        <div style="margin-top: 20px;" class="container">
+            <div class="sub-container">
+
+                <h1>Il turismo</h1>
+                <p class="testo-narrativo"> In collaborazione con molte figure locali ed esperti del territorio limitrofo, offriamo la possibilità di poter fare un viaggio immersivo tra i paesaggi montanari che contraddistinguono queste zone. </p>
+                </br>
+                
+                <figure>
+                    <img id="menuImg" width="100%" src="Imgs/PaesaggioMontanaro.jpg" title="FotoMontagna1">
+                    <figcaption> foto di <a href="https://www.flickr.com/photos/randihausken/">Randi Hausken</a> </figcaption>
+                </figure>
+                
+                
+            </div>
+            
+            <figure class="immagineAccompagnamento">
+                <img width="100%" src="https://api.openverse.org/v1/images/288b952f-1349-4ca7-aa6e-d52b14e027d6/thumb/" title="FotoMontagna2">
+                <figcaption> foto di <a href="https://www.flickr.com/photos/nikond7982/">Vincent D'Amico</a></figcaption> 
+            </figure>
+            
+
+        </div>
+        
+    
+    </body>
+</html>
