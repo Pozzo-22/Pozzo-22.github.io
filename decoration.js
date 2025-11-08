@@ -32,4 +32,34 @@ function changeImgNext(){
         imgName.src = "Imgs/MenuPag1.png";
 
     }
+
 }
+
+
+let isInternalNavigation = true;
+
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href]');
+    
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        const isExternal = href.startsWith('http') && !href.includes(window.location.hostname);
+        
+        if (isExternal) {
+            link.addEventListener('click', function() {
+                isInternalNavigation = false;
+            });
+        }
+    });
+});
+
+window.addEventListener('popstate', function(event) {
+    if (isInternalNavigation) {
+        window.history.forward();
+    }
+    isInternalNavigation = true;
+});
+
+window.addEventListener('beforeunload', function() {
+    isInternalNavigation = false;
+});
